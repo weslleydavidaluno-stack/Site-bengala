@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peça a sua — Bengala Supersônica</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="menu">
+
+            <div class="logo">
+                Bengala Supersônica
+            </div>
+
+            <nav>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#vantagens">Vantagens</a>
+                <a href="index.html#galeria">Galeria</a>
+                <a href="index.html#patrocinio">Patrocínio</a>
+                <a href="index.html">Voltar ao site</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="form-hero">
+
+        <div class="form-hero-content">
+
+            <span class="form-eyebrow">Pedido</span>
+
+            <h1>
+                Vamos montar a <span>sua</span> Bengala Supersônica
+            </h1>
+
+            <p>
+                Leva menos de 2 minutos. Depois disso, é só aguardar nosso contato para combinar a entrega.
+            </p>
+
+            <div class="form-specs">
+                <div class="form-spec">
+                    <strong>Sensor</strong>
+                    <span>Obstáculos à frente</span>
+                </div>
+                <div class="form-spec">
+                    <strong>Estrutura</strong>
+                    <span>Leve e resistente</span>
+                </div>
+                <div class="form-spec">
+                    <strong>Unidades</strong>
+                    <span>Feitas sob encomenda</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="form-section">
+
+        <form id="pedido-form" class="form-card" novalidate>
+
+            <div class="form-tag">PEDIDO · 01</div>
+
+            <div class="form-bloco">
+
+                <div class="form-bloco-titulo">
+                    <span class="form-no">01</span>
+                    <h2>Quem é você</h2>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+                    <span class="form-erro"></span>
+                </div>
+
+                <div class="form-linha">
+
+                    <div class="form-grupo">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                        <span class="form-erro"></span>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                        <span class="form-erro"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="form-trilha" aria-hidden="true"><span></span></div>
+
+            <div class="form-bloco">
+
+                <div class="form-bloco-titulo">
+                    <span class="form-no">02</span>
+                    <h2>Para onde entregar</h2>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="endereco">Endereço completo</label>
+                    <input type="text" id="endereco" name="endereco"
+                        placeholder="Rua, número, bairro, cidade e estado" required>
+                    <span class="form-erro"></span>
+                </div>
+
+            </div>
+
+            <div class="form-trilha" aria-hidden="true"><span></span></div>
+
+            <div class="form-bloco">
+
+                <div class="form-bloco-titulo">
+                    <span class="form-no">03</span>
+                    <h2>Um ajuste fino</h2>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="altura">Altura aproximada</label>
+                    <div class="form-select">
+                        <select id="altura" name="altura" required>
+                            <option value="" disabled selected>Selecione uma faixa</option>
+                            <option value="ate-1.60">Até 1,60 m</option>
+                            <option value="1.61-1.75">1,61 m — 1,75 m</option>
+                            <option value="1.76-1.90">1,76 m — 1,90 m</option>
+                            <option value="acima-1.90">Acima de 1,90 m</option>
+                        </select>
+                    </div>
+                    <span class="form-erro"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label>Mão de apoio preferida</label>
+
+                    <div class="form-dip" role="radiogroup" aria-label="Mão de apoio preferida">
+
+                        <input type="radio" id="mao-direita" name="mao" value="direita" required>
+                        <label class="form-dip-opcao" for="mao-direita">
+                            <span class="form-dip-chave"></span>
+                            Direita
+                        </label>
+
+                        <input type="radio" id="mao-esquerda" name="mao" value="esquerda">
+                        <label class="form-dip-opcao" for="mao-esquerda">
+                            <span class="form-dip-chave"></span>
+                            Esquerda
+                        </label>
+
+                        <input type="radio" id="mao-indiferente" name="mao" value="indiferente">
+                        <label class="form-dip-opcao" for="mao-indiferente">
+                            <span class="form-dip-chave"></span>
+                            Indiferente
+                        </label>
+
+                    </div>
+
+                    <span class="form-erro" id="erro-mao"></span>
+                </div>
+
+            </div>
+
+            <div class="form-trilha" aria-hidden="true"><span></span></div>
+
+            <div class="form-bloco">
+
+                <div class="form-bloco-titulo">
+                    <span class="form-no">04</span>
+                    <h2>Algo mais? <span class="form-opcional">opcional</span></h2>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensagem">Necessidade específica</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"
+                        placeholder="Conte pra gente se você precisa de algum ajuste especial"></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn form-btn">
+                Enviar pedido
+            </button>
+
+            <p class="form-privacidade">
+                Seus dados são usados só para tratar do seu pedido. Nada de spam, nada de terceiros.
+            </p>
+
+        </form>
+
+        <div class="form-sucesso" id="form-sucesso">
+            <div class="form-sucesso-icone">✓</div>
+            <h3>Pedido recebido!</h3>
+            <p>
+                Obrigado! Nossa equipe vai entrar em contato em breve pelo telefone ou e-mail informado
+                para confirmar os próximos passos.
+            </p>
+            <a href="index.html" class="btn">Voltar ao site</a>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 • Bengala Supersônica • Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <div class="form-offline-aviso" id="form-offline-aviso">
+        Não foi possível enviar pelo site agora. Você pode falar direto com a gente pelo
+        <a href="https://wa.me/5555999999999" target="_blank" rel="noopener">WhatsApp</a>
+        ou por
+        <a href="mailto:contato@bengalasupersonica.com.br">e-mail</a>.
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
