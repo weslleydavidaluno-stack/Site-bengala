@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Patrocínio</title>
+    <link rel="stylesheet" href="patrocinio.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="menu">
+
+            <div class="logo">
+                Bengala Supersônica
+            </div>
+
+            <nav>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#vantagens">Vantagens</a>
+                <a href="index.html#galeria">Galeria</a>
+                <a href="index.html#patrocinio">Patrocínio</a>
+                <a href="index.html">Voltar ao site</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Formulário de Patrocínio</h1>
+        <p>Preencha os dados abaixo para enviar sua proposta de patrocínio.</p>
+        <form action="#" method="post">
+            <div class="field-group">
+                <label for="nome">Nome do patrocinador</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome ou empresa" required>
+            </div>
+            <div class="field-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="field-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+            <div class="field-group">
+                <label for="tipo">Tipo de patrocínio</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="produtos">Produtos</option>
+                    <option value="servicos">Serviços</option>
+                    <option value="midia">Mídia/Divulgação</option>
+                </select>
+            </div>
+            <div class="field-group">
+                <label for="valor">Valor estimado ou contribuição</label>
+                <input type="text" id="valor" name="valor" placeholder="R$ 0,00">
+            </div>
+            <div class="field-group">
+                <label for="mensagem">Mensagem ou proposta</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Descreva sua proposta de patrocínio"
+                    required></textarea>
+            </div>
+            <div class="field-group">
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Li e concordo com os termos de patrocínio.
+                </label>
+            </div>
+            <div class="actions">
+                <button type="submit">Enviar proposta</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
