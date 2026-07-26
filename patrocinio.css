@@ -178,3 +178,27 @@ h1 {
 .actions button:hover {
     background-color: #0052a3;
 }
+/* Mensagem de erro */
+.erro-mensagem {
+    display: none;
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* Campo em erro */
+.valor-group.erro input {
+    border: 2px solid #ff4d4d;
+    background-color: #ffe6e6;
+}
+
+/* Container em erro */
+.container.erro {
+    border: 2px solid #ff4d4d;
+}
+
+/* Botão desabilitado */
+.actions button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
