@@ -110,6 +110,35 @@ nav a:hover::after {
     width: 100%;
 }
 
+
+.titulo {
+    font-family: var(--fonte-display);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+    margin: 0 0 32px;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 3px;
+    margin-top: 12px;
+    background: linear-gradient(90deg, var(--azul-ceu), var(--branco));
+    border-radius: 2px;
+}
+
+.titulo-link {
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.titulo-link:hover {
+    color: var(--azul-ceu);
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
