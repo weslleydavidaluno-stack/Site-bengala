@@ -202,3 +202,40 @@ h1 {
     background-color: #999;
     cursor: not-allowed;
 }
+<<<<<<< HEAD:patrocinio.css
+=======
+
+.link-termos {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--azul-ceu, #3FC1FF);
+    text-decoration: underline;
+    cursor: pointer;
+    font: inherit;
+}
+.link-termos:hover {
+    color: var(--branco, #F5F8FC);
+}
+
+dialog#modalTermos {
+    max-width: 480px;
+    width: 90%;
+    border: none;
+    border-radius: 12px;
+    padding: 32px;
+}
+dialog#modalTermos::backdrop {
+    background: rgba(5, 7, 12, 0.6);
+}
+dialog#modalTermos h2 {
+    margin-top: 0;
+}
+dialog#modalTermos .modal-conteudo {
+    margin: 16px 0 24px;
+    line-height: 1.6;
+}
+dialog#modalTermos #fecharModal {
+    cursor: pointer;
+}
+>>>>>>> feature:css/patrocinio.css

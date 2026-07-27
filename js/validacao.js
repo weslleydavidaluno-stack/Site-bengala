@@ -25,3 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
     botaoEnviar.disabled = true; // começa desabilitado
     campoValor.addEventListener("input", validarValor);
 });
+
+const btnTermos = document.getElementById('btnTermos');
+const modalTermos = document.getElementById('modalTermos');
+const fecharModal = document.getElementById('fecharModal');
+
+btnTermos.addEventListener('click', () => {
+    modalTermos.showModal();
+});
+
+fecharModal.addEventListener('click', () => {
+    modalTermos.close();
+});
+
+modalTermos.addEventListener('click', (e) => {
+    if (e.target === modalTermos) modalTermos.close();
+});
