@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="galeria.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="menu">
+
+            <div class="logo">
+                Bengala Supersônica
+            </div>
+
+            <nav>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#vantagens">Vantagens</a>
+                <a href="index.html#galeria">Galeria</a>
+                <a href="index.html#patrocinio">Patrocínio</a>
+                <a href="index.html">Voltar ao site</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="galeria">
+        <h2 class="titulo">
+            Galeria de Imagens
+        </h2>
+
+        <div class="galeria-grid" id="galeria-grid">
+
+            <figure class="galeria-item galeria-item--grande" data-index="0">
+                <img src="img1.jpeg"
+                    alt="Bengala em desenvolvimento.">
+                <figcaption>Bengala em desenvolvimento</figcaption>
+            </figure>
+
+            <figure class="galeria-item" data-index="1">
+                <img src="img2.jpeg"
+                    alt="Módulo Arduino preso ao tubo de PVC, com fiação e bateria de 9V acopladas ao cabo.">
+                <figcaption>Módulo de controle e bateria acoplados ao cabo</figcaption>
+            </figure>
+
+            <figure class="galeria-item" data-index="2">
+                <img src="img3.jpeg"
+                    alt="Bengala montada na vertical, mostrando os sensores ultrassônicos distribuídos ao longo do cabo.">
+                <figcaption>Protótipo completo com sensores distribuídos ao longo do cabo</figcaption>
+            </figure>
+
+            <figure class="galeria-item" data-index="3">
+                <img src="img4.jpeg"
+                    alt="Bancada de trabalho em etapa inicial de montagem, com módulos sendo fixados ao tubo.">
+                <figcaption>Etapa inicial de montagem na bancada</figcaption>
+            </figure>
+
+            <figure class="galeria-item" data-index="4">
+                <img src="img5.jpeg"
+                    alt="Detalhe da extremidade de empunhadura da bengala, com módulo de controle e conexões protegidas por fita isolante.">
+                <figcaption>Detalhe da empunhadura e das conexões</figcaption>
+            </figure>
+
+            <figure class="galeria-item" data-index="5">
+                <img src="img6.jpeg"
+                    alt="Equipe do projeto sendo entrevistada no palco da Feira de Ciência e Tecnologia Jovem.">
+                <figcaption>Equipe entrevistada no palco do evento</figcaption>
+            </figure>
+
+            <figure class="galeria-item" data-index="6">
+                <img src="img7.jpeg"
+                    alt="Vista geral do auditório com a equipe do projeto diante do telão da Feira de Ciência e Tecnologia Jovem.">
+                <figcaption>Vista geral da apresentação no auditório</figcaption>
+            </figure>
+
+            <figure class="galeria-item" data-index="7">
+                <img src="img8.jpeg"
+                    alt="Integrante da equipe apresentando o protótipo da bengala ao público.">
+                <figcaption>Apresentação do protótipo ao público</figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026</p>
+    </footer>
+
+    <dialog id="lightbox">
+        <button class="lb-close" id="lb-close">✕</button>
+        <button class="lb-nav lb-prev" id="lb-prev">‹</button>
+        <button class="lb-nav lb-next" id="lb-next">›</button>
+        <div class="lb-wrap">
+            <img id="lb-img" src="" alt="">
+            <p class="lb-cap" id="lb-cap"></p>
+        </div>
+    </dialog>
+
+    <script src="galeria.js"></script>
+
+</body>
+</html>
